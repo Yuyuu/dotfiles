@@ -1,0 +1,43 @@
+[user]
+	email = vincent.tertre@ticetime.com
+	name = Vincent Tertre
+
+[github]
+	user = Yuyuu
+
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+
+[hub]
+	protocol = https
+
+[color]
+	ui = auto
+
+[diff]
+	renamelimit = 0
+
+[alias]
+	undo = reset --hard "HEAD~1"
+	uncommit = reset "HEAD~1"
+	lg = log --graph --oneline --decorate
+	co = checkout
+
+[push]
+	default = simple
+
+[help]
+	autocorrect = 10
+
+[merge]
+	conflictstyle = merge
+
+[rerere]
+	enabled = 1
+
+[credential]
+	helper = osxkeychain
+
+[status]
+	showUntrackedFiles = all
