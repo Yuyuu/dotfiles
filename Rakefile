@@ -39,7 +39,7 @@ desc "Uninstall our dotfiles."
 task :uninstall do
   linkables.each do |linkable|
     file = convert(linkable)
-    target = "#{ENV["HOME"]}/#{file}"
+    target = "#{ENV["HOME"]}/.#{file}"
 
     # Remove all symlinks created during installation
     if File.symlink?(target)
@@ -47,8 +47,8 @@ task :uninstall do
     end
 
     # Replace any backups made during installation
-    if File.exists?("#{ENV["HOME"]}/#{file}.dotfile-backup")
-      run %{ mv "$HOME/#{file}.dotfile-backup" "$HOME/#{file}" }
+    if File.exists?("#{ENV["HOME"]}/.#{file}.dotfile-backup")
+      run %{ mv "$HOME/.#{file}.dotfile-backup" "$HOME/.#{file}" }
     end
   end
 end

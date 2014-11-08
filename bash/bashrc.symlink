@@ -1,21 +1,22 @@
+#!/bin/bash
+
 if [[ $- != *i* ]]; then
   return # Shell is non-interactive
 fi
 
 export CLICOLOR=1
-export DOTFILES="${HOME}/src/dotfiles"
-export CHROME_BIN='/opt/homebrew-cask/Caskroom/google-chrome-beta/latest/Google Chrome.app/Contents/MacOS/Google Chrome'
+export DOTFILES="${HOME}/dev/dotfiles"
 
 for config_file in ${DOTFILES}/**/*.bashrc; do
   source $config_file
 done
 unset config_file
 
-CDPATH=:${HOME}:${HOME}/src
-
 PATH=./node_modules/.bin:${PATH}
 PATH=${HOME}/bin:${PATH}
 PATH=$(brew --prefix)/bin:${PATH}
 PATH=${DOTFILES}/bin:${PATH}
 
-[ -f $(brew --prefix)/etc/bash_completion ] && . $(brew --prefix)/etc/bash_completion
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+fi
