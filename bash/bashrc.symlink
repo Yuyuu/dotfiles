@@ -6,6 +6,7 @@ fi
 
 export CLICOLOR=1
 export DOTFILES="${HOME}/dev/dotfiles"
+export CHROME_BIN='/opt/homebrew-cask/Caskroom/google-chrome/latest/Google Chrome.app/Contents/MacOS/Google Chrome'
 
 for config_file in ${DOTFILES}/**/*.bashrc; do
   source $config_file
