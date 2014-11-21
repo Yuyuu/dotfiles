@@ -1,0 +1,5 @@
+#!/bin/bash
+#
+
+git reset HEAD elaastic-writer/elaastic-writer-webclient/app/index.html
+git reset HEAD elaastic-writer/elaastic-writer-webclient/app/scripts/services/InitApplicationService.js
