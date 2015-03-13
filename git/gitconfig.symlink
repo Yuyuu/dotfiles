@@ -1,5 +1,5 @@
 [user]
-	email = vincent.tertre@ticetime.com
+	email = vincent.tertre@gmail.com
 	name = Vincent Tertre
 
 [github]
@@ -16,7 +16,8 @@
 	ui = auto
 
 [diff]
-	renamelimit = 0
+    renamelimit = 0
+    tool = vimdiff
 
 [alias]
 	undo = reset --hard "HEAD~1"
