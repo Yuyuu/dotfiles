@@ -1,5 +1,0 @@
-#!/bin/bash
-#
-
-bash /Users/vincent/dev/elaastic/scripts/ckeditor-build.sh
-(cd /Users/vincent/dev/elaastic/elaastic-writer/elaastic-writer-webclient; grunt deploy)

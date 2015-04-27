@@ -17,8 +17,9 @@ unset config_file
 PATH=./node_modules/.bin:${PATH}
 PATH=${HOME}/bin:${PATH}
 PATH=$(brew --prefix)/bin:${PATH}
+PATH=$(brew --prefix)/sbin:${PATH}
 PATH=${DOTFILES}/bin:${PATH}
+PATH=${HOME}/.jenv/bin:${PATH}
 
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-    . `brew --prefix`/etc/bash_completion
-fi
+[ -f $(brew --prefix)/bin/jenv ] && eval "$(jenv init -)"
+[ -f $(brew --prefix)/etc/bash_completion ] && . $(brew --prefix)/etc/bash_completion

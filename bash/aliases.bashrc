@@ -8,10 +8,8 @@ alias ws='open -b com.jetbrains.webstorm'
 alias atom='open -b com.github.atom'
 alias sk='open -b com.skype.skype'
 alias ev='open -b com.evernote.Evernote'
-alias mel='open -b com.apple.mail'
 alias chr='open -b com.google.Chrome'
-alias cu='open -a Google\ Chrome --args --disable-web-security'
-alias openall='mel; ev; chr; ij; ws; sk'
+alias openall='chr; ij; ws; sk'
 
 alias breww='brew update; brew upgrade; brew doctor'
 

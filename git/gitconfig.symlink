@@ -17,9 +17,9 @@
 
 [diff]
     renamelimit = 0
-    tool = vimdiff
 
 [alias]
+    su = status -sb
 	undo = reset --hard "HEAD~1"
 	uncommit = reset "HEAD~1"
 	lg = log --graph --oneline --decorate
