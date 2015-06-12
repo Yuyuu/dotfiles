@@ -11,6 +11,4 @@ alias ev='open -b com.evernote.Evernote'
 alias chr='open -b com.google.Chrome'
 alias openall='chr; ij; ws; sk'
 
-alias breww='brew update; brew upgrade; brew doctor'
-
-alias ckb='bash /Users/vincent/dev/elaastic/scripts/ckeditor-build.sh'
+alias breww='brew update; brew upgrade --all; brew doctor'
