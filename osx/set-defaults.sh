@@ -147,9 +147,3 @@ sudo chflags uchg /Private/var/vm/sleepimage
 
 # Disable the sudden motion sensor as it’s not useful for SSDs
 sudo pmset -a sms 0
-
-# Scripts
-# osascript scripts/contacts.scpt > /dev/null
-
-# Restart applications
-killall Finder Contacts

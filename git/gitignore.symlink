@@ -6,8 +6,9 @@
 .gradle/
 build/
 
-## node
-node_modules
+## python
+*.pyc
+venv
 
 ## osx
 .DS_Store

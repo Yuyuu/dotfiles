@@ -11,7 +11,7 @@ brew doctor
 brew upgrade
 
 if [[ $(brew tap) != *cask* ]]; then
-	brew tap phinze/homebrew-cask
+	brew tap caskroom/cask
 	brew install brew-cask
 fi
 
@@ -31,11 +31,4 @@ TO_INSTALL=$(comm -13 /tmp/installed cask-formulas)
 
 if [ ! -z "${TO_INSTALL}" ]; then
 	brew cask install ${TO_INSTALL}
-fi
-
-# Install gvm
-#
-if [ ! -d ~/.gvm ]; then
-  echo "Install gvm"
-  curl -s get.gvmtool.net | bash
 fi
