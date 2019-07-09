@@ -6,7 +6,7 @@ fi
 
 export CLICOLOR=1
 export DOTFILES="${HOME}/dev/dotfiles"
-export CHROME_BIN="/opt/homebrew-cask/Caskroom/google-chrome/latest/Google Chrome.app/Contents/MacOS/Google Chrome"
+# export CHROME_BIN="/opt/homebrew-cask/Caskroom/google-chrome/latest/Google Chrome.app/Contents/MacOS/Google Chrome"
 export HOMEBREW_CASK_OPTS="--appdir=${HOME}/Applications/Cask"
 
 for config_file in ${DOTFILES}/**/*.bashrc; do
@@ -21,5 +21,8 @@ PATH=$(brew --prefix)/sbin:${PATH}
 PATH=${DOTFILES}/bin:${PATH}
 PATH=${HOME}/.jenv/bin:${PATH}
 
-[ -f $(brew --prefix)/bin/jenv ] && eval "$(jenv init -)"
-[ -f $(brew --prefix)/etc/bash_completion ] && . $(brew --prefix)/etc/bash_completion
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"

@@ -128,6 +128,9 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 # Open Finder on Home
 defaults write com.apple.finder NewWindowTarget PfHm
 
+# Leave font smoothing enabled
+defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
+
 ###############################################################################
 # SSD-specific tweaks                                                         #
 ###############################################################################

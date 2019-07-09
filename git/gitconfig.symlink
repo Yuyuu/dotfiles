@@ -1,9 +1,9 @@
 [user]
-	email = vincent.tertre@gmail.com
-	name = Vincent Tertre
+	email = vincent.tertre@tiime.fr
+	name = vtertre
 
 [github]
-	user = Yuyuu
+	user = vtertre
 
 [core]
 	editor = vim
